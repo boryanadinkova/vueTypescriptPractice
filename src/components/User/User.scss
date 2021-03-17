@@ -1,0 +1,16 @@
+.userItem {
+  padding: 1rem;
+  border: 1px solid transparent;
+  transition: border-color 0.2s ease-in-out;
+  cursor: pointer;
+
+  .userItemTitle {
+    font-size: 14px;
+    font-weight: bold;
+  }
+
+  &.active {
+    border-color: #000;
+    border-radius: 4px;
+  }
+}

@@ -1,0 +1,65 @@
+.userDetailsContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  .title,
+  .subtitle {
+    padding-left: 3rem;
+    margin-bottom: 0rem;
+  }
+
+  .title {
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  .itemContainer {
+    width: 95%;
+    display: flex;
+    padding: 4rem 2rem;
+    justify-content: space-around;
+
+    .tile {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      width: 30%;
+      height: 9rem;
+      margin: 0.5rem;
+      background: #f6f9fb;
+      border-radius: 4px;
+
+      .tileValue {
+        font-size: 18px;
+        color: #2c3e50;
+        font-weight: bold;
+        margin-top: 0.8rem;
+      }
+    }
+  }
+
+  .attributeContainer {
+    flex-direction: column;
+
+    .attributeHeader {
+      color: #b2b7b9;
+    }
+
+    .row {
+      display: flex;
+      flex-direction: row;
+      border-bottom: 2px solid #e1e4e5;
+      padding: 1.5rem;
+    }
+
+    .listItem {
+      text-align: left;
+    }
+
+    .attributeKey {
+      width: 30%;
+    }
+  }
+}
