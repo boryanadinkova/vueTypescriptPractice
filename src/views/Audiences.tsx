@@ -10,6 +10,7 @@ export default class Audiences extends Vue {
   users: Array<UserEntity> = generateSampleData();
   currentUser: UserEntity = this.users[0];
 
+  // eslint-disable-next-line
   onToggleUserDetails(id: any) {
     this.currentUser = this.users[id.split("_")[1]];
     return this.currentUser;

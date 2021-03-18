@@ -4,6 +4,7 @@ export class UserEntity {
   id = "";
   isDeveloper = false;
   devices = 0;
+  // eslint-disable-next-line
   sessions: Array<any> = [];
   location = "Unknown";
   created = TODAY;
@@ -11,7 +12,7 @@ export class UserEntity {
     push: true,
     email: false,
     webhook: true,
-    appInbox: true
+    appInbox: true,
   };
   events = 0;
   bucket = 0;
@@ -36,10 +37,10 @@ export function generateSampleData(): Array<UserEntity> {
       push: false,
       email: true,
       webhook: true,
-      appInbox: true
+      appInbox: true,
     },
     attributes: {
-      email: `usr_${i}@example.com`
-    }
+      email: `usr_${i}@example.com`,
+    },
   }));
 }
